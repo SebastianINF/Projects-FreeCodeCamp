@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+body {
+  padding: 100px 0 0 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  height: 50px;
+}
+
+input[type="email"] {
+  border: none;
+  width: 200px;
+  height: 20px;
+  padding: 10px 3px;
+  outline: none;
+}
+
+input[type="email"]:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  border: none;
+  height: 20px;
+  padding: 0 20px;
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(184, 184, 184);
+  color: rgb(44, 44, 44);
+}
+
+#header-img{
+  width: 50px;
+}
+
+#container-body{
+  margin: 40px 0 0 0 ;
+}
+
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  margin: 20px 20px;
+  transition: 0.3s ease;
+  padding: 0 7px;
+  border-radius: 3px;
+}
+
+.nav-link:hover{
+  color: white;
+  background-color: black;
+
+}
+
+#container-body {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#video {
+  max-width: 499px;
+  padding: 30px 0;
+}
+#Pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 40px 0 40px 0 ;
+  text-align: center;
+}
+
+.precio{
+  width: 250px;
+  margin: 0 10px;
+  background-color: rgb(214, 214, 214);
+  border: none;
+  border: 1px solid rgb(72, 72, 72);
+  border-radius: 2px;
+}
+
+.header{
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: rgb(71, 71, 71, 0.6);
+}
+
+p{
+  color: black;
+}
+
+.boton-escoger {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 47);
+  color: black;
+  padding: 5px 10px;
+  margin: 0 0 30px 0;
+}
+h2 {
+  color: black;
+}
+.boton-escoger:hover{
+  outline: none;
+  background-color: orange;
+  color: black;
+}
+
+@media screen and (max-width: 500px){
+  body {
+    padding: 40px 0 0 0 ;
+  }
+
+
+  #header {
+    position: fixed;
+    padding: 70px 0;
+    flex-direction: column;
+  }
+
+}

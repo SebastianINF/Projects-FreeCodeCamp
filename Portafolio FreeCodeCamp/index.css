@@ -1,0 +1,132 @@
+/* Estilos generales para dispositivos grandes */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 383px;
+  background-color: #180f00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000000' stroke-width='100' stroke-opacity='0.17' %3E%3Ccircle fill='%23180F00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%231c0f00' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23201000' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23240f00' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23280f00' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%232c0e00' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23300c00' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23340a02' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23380708' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%233c040e' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23400115' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2343001a' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23460020' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23480027' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2349002f' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23490038' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23470041' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%2344004A' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Estilos de la barra de navegación */
+#navbar {
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  display: flex;
+  justify-content: end;
+  top: 0;
+}
+
+#navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding-left: 30px;
+}
+
+#navbar nav ul li {
+  margin-right: 20px;
+  transition: 3ms ease;
+  padding: 2px 5px;
+}
+
+#navbar nav ul li:hover {
+  background-color: white;
+  border-radius: 3px;
+  color: #272525;
+  cursor: pointer;
+}
+#navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#navbar nav ul li:hover a {
+  color: #333;
+}
+/* Estilos de la sección de bienvenida */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+#welcome-section h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Estilos de la sección de proyectos */
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 39, 39);
+  padding: 20px;
+}
+
+.project-tile {
+  background-color: #272525;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  margin: 0 10px;
+  border: 5px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.project-tile h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.project-tile p {
+  margin: 10px 0;
+}
+
+.project-tile a {
+  text-decoration: none;
+  background-color: rgb(48, 38, 38);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.project-tile {
+  
+  background-color: rgb(25, 24, 24);
+}
+.project-tile:hover {
+  background-color: #272525;
+}
+.project-tile a:hover {
+  background-color: #3d3d3d;
+}
+
+/* Consulta de medios para dispositivos pequeños */
+@media (width < 425px) {
+  /* Estilos específicos para dispositivos pequeños */
+  #navbar {
+    justify-content: flex-start;
+  }
+
+  #navbar nav ul {
+    flex-direction: column;
+  }
+
+  #navbar nav ul li {
+    margin-right: 0; /* Elimina el margen en dispositivos pequeños */
+    margin-bottom: 10px; /* Agrega margen inferior en dispositivos pequeños */
+  }
+}

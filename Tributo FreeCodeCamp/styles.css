@@ -1,0 +1,58 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  background-color: #10001b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.17'%3E%3Ccircle fill='%2310001B' cx='50' cy='0' r='50'/%3E%3Cg fill='%2313001b' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2316001c' cx='50' cy='100' r='50'/%3E%3Cg fill='%2318001c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%231b001c' cx='50' cy='200' r='50'/%3E%3Cg fill='%231d001b' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231f011b' cx='50' cy='300' r='50'/%3E%3Cg fill='%2321011b' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%2323011a' cx='50' cy='400' r='50'/%3E%3Cg fill='%23250119' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23270118' cx='50' cy='500' r='50'/%3E%3Cg fill='%23290117' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%232a0116' cx='50' cy='600' r='50'/%3E%3Cg fill='%232c0115' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%232e0113' cx='50' cy='700' r='50'/%3E%3Cg fill='%23300111' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2331010f' cx='50' cy='800' r='50'/%3E%3Cg fill='%2332010c' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23340109' cx='50' cy='900' r='50'/%3E%3Cg fill='%23350206' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23360202' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#title {
+  margin: 3px 0;
+}
+
+#image-div {
+  text-align: center;
+}
+
+#ancle-image {
+  display: block;
+  border-radius: 3px;
+  width: 400px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+#image {
+  display: block;
+  border-radius: 3px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#img-caption {
+  margin: 10px 0;
+}
+
+#tribute-info {
+  max-width: 700px ;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+#tribute-link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a{
+  cursor:pointer
+}

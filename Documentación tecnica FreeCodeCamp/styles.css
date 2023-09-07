@@ -1,0 +1,133 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-items: center;
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+::selection {
+  background-color: rgb(
+    181,
+    5,
+    181
+  ); /* Cambia el color de fondo de la selección a violeta */
+  color: white; /* Cambia el color del texto seleccionado a blanco */
+}
+
+#navbar {
+  flex: 1;
+  position: fixed;
+  width: 200px;
+  padding-bottom: 100%;
+  background-color: rgb(66, 66, 66, 0.3);
+  border-right: 1px solid white;
+}
+
+#title-nav {
+  width: 100%;
+  margin: 10px 0 10px 10px;
+  overflow: hidden;
+}
+
+#main-doc {
+  flex: 2;
+  margin: 0 4px 0 220px;
+}
+
+#navbar-ul {
+  width: 100%;
+  list-style: none;
+  padding: 3px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  user-select: none;
+}
+
+.nav-link1 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link1:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.nav-link {
+  border-bottom: 1px solid white; /* Borde de 1 píxel de grosor en cada fila */
+  padding: 5px; /* Espacio interno alrededor del texto */
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: yellow;
+  color: black;
+}
+
+header {
+  font: bold 24px white;
+  margin: 10px 0;
+}
+
+pre {
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  background-color: rgb(174, 171, 171);
+  color: black;
+  width: 80%;
+}
+code{
+
+  width: 100%;
+}
+#MDN:hover {
+  color: white;
+}
+
+/* Ejecuta el CSS en pantallas cuyo ancho tenga como mínimo 768px */
+/* Es decir, lo ejecuta a partir de 768px en adelante */
+@media screen and (max-width: 524px) {
+  #navbar {
+    width: 100%; /* Asegúrate de que el menú ocupe el 100% del ancho */
+    position: static; /* Elimina la posición fija en pantallas pequeñas */
+    padding: 0;
+    margin: 0 auto;
+    padding: 0 5%;
+    padding-bottom: 0;
+    border-right: none;
+  }
+
+ 
+  #main-doc {
+    margin: 0 3px 0 4px;
+    padding-left: 30px;
+    width: auto;
+  }
+  /* Configura la dirección de flexbox a columna en pantallas pequeñas */
+  body {
+    flex-direction: column;
+  }
+  code {
+    text-align: start;
+    padding-left: 0;
+    overflow-x: scroll;
+    padding-right: 5px;
+  }
+}

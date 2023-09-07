@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BotonVanilla</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #101010;
+      }
+
+      #container-counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      #container-puntaje {
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+      #main {
+        text-align: center;
+      }
+
+      section {
+        text-align: center;
+      }
+      h3 {
+        background-color: rgb(0, 255, 68);
+        color: black;
+        padding: 30px 40px;
+        border: 2px solid white;
+      }
+
+      button {
+        background-color: orange;
+        color: white;
+        padding: 5px 3px;
+        border: 1px solid white;
+        border-radius: 3px;
+      }
+
+      button:hover {
+        background-color: blueviolet;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      #boton-volver {
+        padding: 10px 20px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(41, 36, 36);
+        color: white;
+        text-decoration: solid;
+        margin-top: 200px;
+      }
+
+      #boton-volver:hover {
+        background-color: rgb(112, 110, 110);
+      }
+
+      #boton-volver:hover a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="container-counter">
+        <span>Contador:</span>
+        <h1 id="counter">0</h1>
+      </div>
+
+      <section>
+        <div id="container-puntaje">
+          <p>Mejor puntaje:</p>
+          <span id="puntaje">0</span>
+        </div>
+        <h3></h3>
+        <button>Clickeame</button>
+      </section>
+    </div>
+    <a id="boton-volver" href="/index.html">Volver</a>
+    <script>
+      const counterElement = document.getElementById('counter')
+      let count = 0
+      function updateCounter() {
+        let puntajeMax
+        if (count < 9) {
+          count++
+          counterElement.textContent = count
+        } else {
+          count = 0
+          counterElement.textContent = count
+          puntajeMax = document.querySelector('h3').textContent
+          document.getElementById('puntaje').textContent = puntajeMax
+          document.querySelector('h3').textContent = 0
+        }
+      }
+      setInterval(updateCounter, 1000)
+
+      let button = document.querySelector('button')
+      let h3 = document.querySelector('h3')
+      h3.textContent = 0
+      button.addEventListener('click', e => {
+        h3.textContent = Number(h3.textContent) + 1
+        contadorh3++
+      })
+    </script>
+  </body>
+</html>

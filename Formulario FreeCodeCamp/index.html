@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario FreeCodeCamp</title>
+  </head>
+  <body>
+    <h1 id="title">Formulario FreeCodeCamp</h1>
+    <form
+      id="survey-form"
+      action="tu_archivo_de_procesamiento.php"
+      method="POST"
+    >
+      <link rel="stylesheet" href="./styles.css" />
+      <p id="description">Este formulario te brinda la oportunidad de proporcionar información clave de manera conveniente y segura. A través de este formulario, puedes compartir detalles importantes con nosotros, lo que nos ayudará a brindarte un mejor servicio. Simplemente completa los campos requeridos con tus datos y comentarios, y luego envía el formulario. Estamos aquí para escucharte y responder a tus necesidades.</p>
+      <label for="name" id="name-label">Nombre:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Ingresa tu nombre"
+      />
+
+      <label for="email" id="email-label">Correo Electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Ingresa tu correo electrónico"
+      />
+
+      <label for="number" id="number-label">Número:</label>
+      <input
+        type="number"
+        id="number"
+        name="number"
+        min="1"
+        max="100"
+        required
+        placeholder="Ingresa un número válido"
+      />
+
+      <label for="dropdown">Selecciona una opción:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+      </select>
+
+      <label>Opciones de Botones de Radio:</label>
+      <input type="radio" name="radio-group" value="opcion1" /> Opción 1
+      <input type="radio" name="radio-group" value="opcion2" /> Opción 2
+      <input type="radio" name="radio-group" value="opcion3" /> Opción 3
+
+      <label>Selecciona varias opciones:</label>
+      <input type="checkbox" name="checkbox-group" value="opcion1" /> Opción 1
+      <input type="checkbox" name="checkbox-group" value="opcion2" /> Opción 2
+      <input type="checkbox" name="checkbox-group" value="opcion3" /> Opción 3
+
+      <label for="comments">Comentarios adicionales:</label>
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Escribe tus comentarios aquí"
+      ></textarea>
+
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </body>
+</html>
